@@ -81,7 +81,7 @@ padding: 0 1rem;
 height: 100%;
 
 &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #00FFFF;
 }
 `
 export const NavBtn=styled.nav`
@@ -95,7 +95,7 @@ align-items: center;
 `
 export const NavBtnLink = styled(LinkR)`
 border-radius:50px;
-background: #01bf71;
+background: #00FFFF;
 white-space: nowrap;
 padding: 10px 22px;
 color: #010606;
