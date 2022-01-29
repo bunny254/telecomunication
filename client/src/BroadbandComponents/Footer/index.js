@@ -30,7 +30,7 @@ const Footer = () => {
               <FooterLink to="/signin">Terms of Service </FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle> About Us </FooterLinkTitle>
+              <FooterLinkTitle> Contact Us </FooterLinkTitle>
               <FooterLink to="/signin">Get Started </FooterLink>
               <FooterLink to="/signin">Our Clients </FooterLink>
               <FooterLink to="/signin">Careers </FooterLink>
@@ -39,24 +39,18 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle> About Us </FooterLinkTitle>
+              <FooterLinkTitle> Explore </FooterLinkTitle>
               <FooterLink to="/signin">Get Started </FooterLink>
               <FooterLink to="/signin">Our Clients </FooterLink>
               <FooterLink to="/signin">Careers </FooterLink>
               <FooterLink to="/signin">Terms of Service </FooterLink>
             </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle> About Us </FooterLinkTitle>
-              <FooterLink to="/signin">Get Started </FooterLink>
-              <FooterLink to="/signin">Our Clients </FooterLink>
-              <FooterLink to="/signin">Careers </FooterLink>
-              <FooterLink to="/signin">Terms of Service </FooterLink>
-            </FooterLinkItems>
+           
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Kim</SocialLogo>
+            <SocialLogo to="/">Broadband</SocialLogo>
             <WebsiteRights>
               Made With ❤️ By Simon Wachira © {new Date().getFullYear()}{" "}
             </WebsiteRights>
