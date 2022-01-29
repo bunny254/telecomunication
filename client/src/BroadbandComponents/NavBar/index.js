@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -27,6 +28,10 @@ const NavBar = ({toggle}) => {
     window.addEventListener('scroll', changeNav)
     }, []);
 
+  const toggleHome=()=>{
+    scroll.scrollToTop();
+  };
+
 
 
   return (
@@ -34,13 +39,15 @@ const NavBar = ({toggle}) => {
     <IconContext.Provider value={ {color:'#fff'} }>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">Broadband</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>Broadband</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItems>
-              <NavLinks to="Home">Home</NavLinks>
+              <NavLinks to="Home"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              >Home</NavLinks>
             </NavItems>
             <NavItems>
               <NavLinks to="Packages">Packages</NavLinks>
