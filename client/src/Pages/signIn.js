@@ -1,9 +1,10 @@
 import React from 'react';
+import SignIn from '../BroadbandComponents/Signin';
 
 const signInPage = () => {
   return (
   <div>
-      <h1>Sign In</h1>
+      <SignIn/>
   </div>);
 };
 

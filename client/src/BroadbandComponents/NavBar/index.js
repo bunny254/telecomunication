@@ -50,17 +50,25 @@ const NavBar = ({toggle}) => {
               >Home</NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="Packages">Packages</NavLinks>
+              <NavLinks to="Packages"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              >Packages</NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="Discovey">Discover</NavLinks>
+              <NavLinks to="Discovey"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              >Discover</NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="ContactUs">Contact Us</NavLinks>
+              <NavLinks to="ContactUs"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              >Contact Us</NavLinks>
             </NavItems>
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to="SignIn">Sign In</NavBtnLink>
+              <NavBtnLink to="SignIn"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              >Sign In</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

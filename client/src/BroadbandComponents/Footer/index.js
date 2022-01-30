@@ -1,5 +1,6 @@
 import React from "react";
 import {FaInstagram, FaTwitter, FaLinkedin} from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
@@ -17,6 +18,10 @@ import {
 } from "./FooterElements";
 
 const Footer = () => {
+
+  const toggleHome=()=>{
+    scroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
@@ -50,7 +55,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Broadband</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>Broadband</SocialLogo>
             <WebsiteRights>
               Made With ❤️ By Simon Wachira © {new Date().getFullYear()}{" "}
             </WebsiteRights>
