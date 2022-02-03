@@ -10,6 +10,7 @@ import NavBar from "../BroadbandComponents/NavBar";
 import SideBar from "../BroadbandComponents/SideBar";
 import Services from "../BroadbandComponents/Services";
 import Footer from "../BroadbandComponents/Footer";
+import ScrollIndicator from "../BroadbandComponents/scrollIndicator";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +20,10 @@ const Home = () => {
   };
   return (
     <>
+      
       <SideBar isOpen={isOpen} toggle={toggle} />
-      <NavBar toggle={toggle} />
+      <NavBar toggle={toggle} /> 
+      <ScrollIndicator/>
       <TopSection />
       <RestofContent {...homeObjOne} />
       <RestofContent {...homeObjTwo} />
