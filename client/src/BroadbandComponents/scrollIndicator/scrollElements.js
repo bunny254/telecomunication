@@ -8,7 +8,7 @@ export const Container = styled.div`
   left: 0;
   z-index: 10;
   width: 100%;
-  margin-top:-80px;
+  margin-top:0px;
 `;
 
 export const ProgressBar = styled.div`
